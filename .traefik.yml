@@ -1,0 +1,10 @@
+displayName: ReplacePathWithHostRegex
+type: middleware
+
+import: github.com/robinbetts/replacePathWithHostRegex
+
+summary: 'Traefik plugin for replace path middleware that uses a host regex'
+
+testData:
+  HostRegex: ^foo-([a-zA-Z0-9-_]+)\.
+  PathReplacement: /bar/$1/index.html
